@@ -1,12 +1,12 @@
 # MLOps Major Assignment  
-## Roll Number: <YOUR ROLL NO>  
-## Name: <YOUR NAME>
+## Roll Number: G24AI2053 
+## Name: Hardikbhai Kaliya
 
 ---
 
 ## 🔗 Required Links  
-### GitHub Repository: <public repository link>  
-### Docker Hub Image: <public docker hub link>  
+### GitHub Repository: https://github.com/Hardikkaliya001/MLOPs_Assignment
+### Docker Hub Image: https://hub.docker.com/r/hardikgkaliya/mlops-major  
 
 ---
 
@@ -17,6 +17,7 @@
 - Split: 70% train, 30% test  
 - Model: DecisionTreeClassifier  
 - Saved with joblib  
+-Accuracy : 0.48
 
 ### ✔ Flask Web Application  
 - Upload image  
@@ -37,8 +38,4 @@ Runs on push to `dev` or `docker_cicd`
 ### ✔ Kubernetes  
 - Deployment created with 3 replicas  
 - Uses Docker Hub container  
-
----
-
-## 📁 Project Structure
 
