@@ -1,0 +1,31 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - dev
+      - docker_cicd
+
+jobs:
+  run-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Train model
+      run: python train.py
+
+    - name: Test model
+      run: python test.py
